@@ -1,0 +1,7 @@
+.footer-wrapper{
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: rgba(230, 230, 250, .5);
+}

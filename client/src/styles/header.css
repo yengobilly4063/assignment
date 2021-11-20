@@ -1,0 +1,35 @@
+header{
+    min-height: 50px;
+    background-color: rgba(230, 230, 250, .5)
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+}
+
+.nav-right{
+    display: flex;
+    flex-direction: row; 
+}
+.nav-right p:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-right span:not(:last-child){
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+
+.nav-right p:hover{
+    border-bottom: 1px solid peru;
+    cursor: pointer;
+}
+
+.logout{
+    color: red;
+}
+

@@ -1,0 +1,31 @@
+.task-item-wrapper{
+    margin-bottom: 10px;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 1px 1px #000;
+}
+.task-title{
+    
+    flex: 1;
+}
+.task-title a{
+    color: blue;
+}
+.task-desc{
+    flex: 1;
+}
+
+.task-created{
+    flex: .5;
+    color: gray;
+}
+
+.task-action{
+    flex: .5;
+    text-align: right;
+}

@@ -1,0 +1,8 @@
+.task-list{
+    /* border: 1px solid red; */
+    margin-top: 25px;
+}
+
+.task-item{
+    list-style: none;
+}
