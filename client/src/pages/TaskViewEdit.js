@@ -41,7 +41,7 @@ const TaskViewEdit = () => {
         await axios.patch(`/api/todos/${id}`, formData, config).then(({data}) => {
             history.push("/")
         }).catch((error) => {
-            return setFormError(error.message)
+            return setFormError("Please verify task details")
         })
     }
 

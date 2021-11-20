@@ -26,7 +26,7 @@ const Register = () => {
         await axios.post(`api/auth/register`, formData).then(({data}) => {
             history.push("/login")
         }).catch((error) => {
-            return setFormError(error.message)
+            return setFormError("Please check your details")
         })
     }
 

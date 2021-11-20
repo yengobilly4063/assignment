@@ -29,7 +29,7 @@ const Login = () => {
             localStorage.setItem("accessToken", token)
             history.push("/")
         }).catch((error) => {
-            return setFormError(error.message)
+            return setFormError("Invalid credentials")
         })
     }
 

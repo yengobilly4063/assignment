@@ -28,6 +28,23 @@ a:hover{
   background-color: blue !important;
   color: white !important;
 }
+.btn-create-task{
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid blue;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.btn-create-task a{
+  color: black;
+}
+.btn-create-task a:hover{
+  color: white ;
+}
+.btn-create-task:hover{
+  cursor: pointer;
+  background-color: #000;
+}
 
 .btn-delete{
   padding: 3px 5px;

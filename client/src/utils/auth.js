@@ -9,6 +9,6 @@ export const getAccessToken = () => {
 }
 
 export const logout = () => {
-    return localStorage.removeItem(accessToken)
+    localStorage.removeItem(accessToken)
 }
 

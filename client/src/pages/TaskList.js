@@ -34,14 +34,21 @@ const TaskList = () => {
 
     return (
         <React.Fragment>
-            <h1>Task List</h1>
-            <ul className="task-list">
-                {tasks.map(task => (
-                    <li className="task-item" key={task._id}>
-                        <TaskItem task={task} taskDelete={handleTaskDelete}/>
-                    </li>
-                ))}
-            </ul>
+            {tasks.length === 0 && (
+                <div className="no-tasks">
+                    <h1>No tasks found to display</h1>
+                </div>
+            )}
+            {tasks.length > 0 && (
+                 <ul className="task-list">
+                 {tasks.map(task => (
+                     <li className="task-item" key={task._id}>
+                         <TaskItem task={task} taskDelete={handleTaskDelete}/>
+                     </li>
+                 ))}
+             </ul>
+            )}
+           
             
         </React.Fragment>
     )

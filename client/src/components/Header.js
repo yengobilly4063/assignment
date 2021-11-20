@@ -50,7 +50,7 @@ const Header = () => {
                             {loggedIn && (
                                 <div className="nav-right">
                                 <span>{user?.name}</span>
-                                <p><Link to={"/task/new"}>Create Task</Link></p>
+                                <button className="btn-create-task"><Link to={"/task/new"}>Create Task</Link></button>
                                 <p className="logout" onClick={handleLogoutUser}>Logout</p>
                                 </div>
                             )}
